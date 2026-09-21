@@ -494,13 +494,13 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 }
 .testi-quote {
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: 0.92rem;
   font-style: italic;
   color: var(--ink);
-  margin-bottom: 22px;
+  margin-bottom: 10px;
 }
-.testi-name { font-weight: 600; font-size: .92rem; color: var(--indigo-deep); }
-.testi-role { font-size: .85rem; color: var(--ink-soft); }
+.testi-name { font-weight: 600; font-size: .80rem; color: var(--indigo-deep); }
+.testi-role { font-size: .70rem; color: var(--ink-soft); }
 
 @media (max-width: 900px) {
   .testi-grid { grid-template-columns: 1fr; }
