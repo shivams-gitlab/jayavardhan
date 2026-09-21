@@ -494,7 +494,7 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
 }
 .testi-quote {
   font-family: var(--font-display);
-  font-size: 1.12rem;
+  font-size: 1rem;
   font-style: italic;
   color: var(--ink);
   margin-bottom: 22px;
