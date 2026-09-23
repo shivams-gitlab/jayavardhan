@@ -550,6 +550,49 @@ p { margin: 0 0 1em; color: var(--ink-soft); }
   margin-top: 40px;
   text-align: center;
 }
+/*===========================
+Payment
+==============================*/
+/* .legal-body is the same plain-prose text style used on
+     terms.html/privacy.html/consent.html — repeated here rather than
+     added to the shared stylesheet, matching how those pages do it. */
+  .legal-body { max-width: 720px; }
+  .legal-body p { font-size: .98rem; color: var(--ink-soft); }
+
+  /* Payments section: PayPal + UPI side by side, divided the same
+     way .service-grid divides its cards (hairline border-left),
+     just as a simple 2-column variant. */
+  .pay-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid var(--line);
+  }
+  .pay-card {
+    padding: 22px 30px 2px 30px;
+    border-left: 1px solid var(--line);
+  }
+  .pay-card:first-child { border-left: none; }
+  .pay-card h3 { margin-bottom: 8px; }
+  .pay-card .btn { margin-top: 10px; margin-bottom: 14px; }
+  .pay-qr {
+    width: 220px;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    background: var(--sand);
+    border: 1px solid var(--line);
+    margin: 10px 0 14px;
+    overflow: hidden;
+  }
+  .pay-qr img { width: 100%; height: 100%; object-fit: contain; }
+  .pay-upi-id { font-size: .95rem; color: var(--ink); }
+  .pay-note { font-size: .82rem; color: var(--ink-soft); font-style: italic; }
+
+  @media (max-width: 700px) {
+    .pay-grid { grid-template-columns: 1fr; }
+    .pay-card { border-left: none; border-top: 1px solid var(--line); }
+    .pay-card:first-child { border-top: none; }
+  }
+
 
 /* ========================================================
    Final CTA band
