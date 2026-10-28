@@ -2371,8 +2371,8 @@
   </div>
 </div>
 <div style="text-align: center;">
-  <a href="privacy.html" target="_blank" rel="noopener noreferrer" style="color: #8c7248; font-size: 60%;">Privacy Policy</a>
-  <a href="terms.html" target="_blank" rel="noopener noreferrer" style="color: #8c7248; font-size: 60%;">Terms of Service</a>
+  <a href="privacy-hvp.html" target="_blank" rel="noopener noreferrer" style="color: #8c7248; font-size: 60%;">Privacy Policy</a>
+  <a href="terms-hvp.html" target="_blank" rel="noopener noreferrer" style="color: #8c7248; font-size: 60%;">Terms of Service</a>
 </div>
 
 
@@ -2456,13 +2456,13 @@ function saveEvents() {
 // used for the silent (prompt='') request — the interactive "Connect
 // Calendar" button still always shows the full account chooser.
 
-const GCAL_CLIENT_ID = '835516411712-fmvnjehg251rbo763prm4f6ek7cq9ia8.apps.googleusercontent.com'; // ← replace
+const GCAL_CLIENT_ID = '415628934182-2onhqst9b045uanvdhdkl1a3jh9mtgv4.apps.googleusercontent.com'; // ← replace
 // 'email' is a non-sensitive scope (no extra Google verification burden) —
 // added solely so we can ask Google which account just signed in, to save
 // as the login hint above.
 const GCAL_SCOPE     = 'https://www.googleapis.com/auth/calendar.events email';
-const GCAL_SOURCE    = 'vedicplanner'; // extendedProperties tag on all our events
-const GCAL_HINT_KEY  = 'horadarpan_gcal_hint';
+const GCAL_SOURCE    = 'horavedicplanner'; // extendedProperties tag on all our events
+const GCAL_HINT_KEY  = 'hvp_gcal_hint';
 
 function _loadGcalHint() {
   try { return localStorage.getItem(GCAL_HINT_KEY) || ''; } catch { return ''; }
